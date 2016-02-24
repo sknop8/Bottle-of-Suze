@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Multimedia | Suzanne Knop</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="artstylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+	
+</style>
+<body>
+	<script type="text/javascript" src="artheader.js"></script>
+
+	<center>
+		<p id="title2">Multimedia</p>
+		<p id="description">  </p>
+	</center>
+
+	<p><a id="back" href="art.html">Back</a></p>
+
+
+		<script>
+			var artwork = new Array;
+
+			artwork[0]={pic:'artwork/other/multi/2013dreamCollage.jpg',details:'Tissue paper, glue, acrylic paint. Dream concept. 2013'};
+			//artwork[0]={pic:'artwork/paintings/',details:''};
+
+
+
+
+			for(k=0;k<artwork.length;k++){										
+	 			document.body.innerHTML+='<center><img height="'+window.innerHeight*.9+'px" src=' + '"'+artwork[k].pic+'"'+'>'; 
+	 			document.body.innerHTML+='<div class="details" >'+artwork[k].details+'</div></center>';
+			}
+
+
+			
+		</script>
+  
+
+	
+
+</body>
+
+
+</html>

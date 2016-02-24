@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Project Inspiration | Suzanne Knop</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="artstylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+	.details{
+		color:gray;
+	}
+	.detailsTitle{
+		color:white;
+		font-family: "skarpa";
+	}
+</style>
+<body>
+	<script type="text/javascript" src="artheader.js"></script>
+
+	<center>
+		<p id="title2">Project Inspiration</p>
+		<p id="description">  </p>
+	</center>
+
+	<p><a id="back" href="paintings.html">Back</a></p>
+
+
+		<script>
+			var artwork = new Array;
+			artwork[0]={pic:'artwork/paintings/2015pi1.jpg',details:'Self Portrait'};
+			artwork[1]={pic:'artwork/paintings/2015pi2.jpg',details:'Head of the Household'};
+			artwork[2]={pic:'artwork/paintings/2015pi3.jpg',details:''};
+			artwork[3]={pic:'artwork/paintings/2015pi4.jpg',details:'Virginia Woolf'};
+			artwork[4]={pic:'artwork/paintings/2015pi5.jpg',details:'Ezra Pound'};
+			artwork[5]={pic:'artwork/paintings/2015pi6.jpg',details:'Emily Dickinson'};
+			//artwork[0]={pic:'artwork/paintings/',details:''};
+
+
+
+
+			for(k=0;k<artwork.length;k++){										
+	 			document.body.innerHTML+='<center><img height="'+window.innerHeight*.9+'px" src=' + '"'+artwork[k].pic+'"'+'>'; 
+	 			document.body.innerHTML+='<div class="details" >'+artwork[k].details+'</div></center>';
+			}
+
+
+			
+		</script>
+  
+
+	
+
+</body>
+
+
+</html>

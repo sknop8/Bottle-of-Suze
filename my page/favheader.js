@@ -1,0 +1,10 @@
+document.write('<a href="favorites.html"><p id="favTitle">THINGS I LIKE</p></a>');
+document.write('<div id="div">');
+document.write('<a id="home" class="list" href="index.html">Home&nbsp;&nbsp;&nbsp;</a>');
+document.write('<a id="music" class="list" href="music.html">&nbsp;&nbsp;Music&nbsp;&nbsp;</a>');
+document.write('<a id="art" class="list" href="artilike.html">&nbsp;&nbsp;Art&nbsp;&nbsp;</a>');
+//document.write('<a id="tv" class="list" href="">Movies/Shows&nbsp;</a>');
+document.write('<a id="books" class="list" href="books.html">&nbsp;&nbsp;Books&nbsp;&nbsp;</a>');
+document.write('<a id="quotes" class="list" href="quotes.html">&nbsp;&nbsp;Quotes&nbsp;&nbsp;</a>');
+document.write('<a id="poetry" class="list" href="poetry.html">&nbsp;&nbsp;Poetry&nbsp;&nbsp;</a>');
+document.write('</div>');

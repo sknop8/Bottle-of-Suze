@@ -1,0 +1,38 @@
+	@font-face{
+	font-family: "century gothic";
+	src: url('centurygothic.otf');
+	}
+	@font-face{
+	font-family: "arial narrow";
+	src: url('arialnarrow.otf');
+	}
+	@font-face{
+	font-family: "skarpa";
+	src: url('SansSerifFLF.otf');
+	}
+	body{
+		background-color:#202020;
+		padding:30px;
+		font-family:"skarpa";
+		letter-spacing: 10px;
+		line-height:0px;
+	
+	}
+	a{
+		text-decoration: none;
+	}
+	h1{
+		font-size:35pt;
+		color:#DCDCDC;
+
+	}
+	/*
+	h2{
+		display: inline-block;
+		font-size:18pt;
+		color:#7D7D7D;
+		font-weight:none;
+	}
+	*/
+
+	

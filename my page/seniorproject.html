@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>Apathy Series | Suzanne Knop</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="artstylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+	.details{
+		color:gray;
+	}
+	.detailsTitle{
+		color:white;
+		font-family: "skarpa";
+	}
+</style>
+<body>
+	<script type="text/javascript" src="artheader.js"></script>
+
+	<center>
+		<p id="title2">Apathy Series</p>
+		<p id="description"> 12 pieces created from September to early December of 2014 for the Art Institute of Mill Street Loft's program, Senior Project.  </p>
+	</center>
+
+	<p><a id="back" href="paintings.html">Back</a></p>
+
+
+		<script>
+			var artwork = new Array;
+
+			artwork[0]={pic:'artwork/paintings/2014sp1.jpg',details:'<b class="detailsTitle">Apathy No. 1 (Recluse)</b><br>'};
+			artwork[1]={pic:'artwork/paintings/2014sp2.jpg',details:'<b class="detailsTitle">Apathy No. 2 (And What of the Dimensional Distance?)</b><br>'};
+			artwork[2]={pic:'artwork/paintings/2014sp3.jpg',details:'<b class="detailsTitle">Apathy No. 3 (Reaching Nothingness)</b><br>'};
+			artwork[3]={pic:'artwork/paintings/2014sp4.jpg',details:'<b class="detailsTitle">Apathy No. 4 (Lock It Away, Out of the Way)</b><br>'};
+			artwork[4]={pic:'artwork/paintings/2014sp5.jpg',details:'<b class="detailsTitle">Apathy No. 5 (The Dampening Effects of Repetition)</b><br>'};
+			artwork[5]={pic:'artwork/paintings/2014sp6.jpg',details:'<b class="detailsTitle">Apathy No. 6 (Into the Cold Light)</b><br>'};
+			artwork[6]={pic:'artwork/paintings/2014sp7.jpg',details:'<b class="detailsTitle">Apathy No. 7 (Recluse II)</b><br>'};
+			artwork[7]={pic:'artwork/paintings/2014sp8.jpg',details:'<b class="detailsTitle">Apathy No. 8 (Into the Cold Light II)</b><br>'};
+			artwork[8]={pic:'artwork/paintings/2014sp9.jpg',details:'<b class="detailsTitle">Apathy No. 9 (The Escape)</b><br>'};
+			artwork[9]={pic:'artwork/paintings/2014sp10.jpg',details:'<b class="detailsTitle">Apathy No. 10 (Formation)</b><br>'};
+			artwork[10]={pic:'artwork/paintings/2014sp11.jpg',details:'<b class="detailsTitle">Apathy No. 11 (Arrival)</b><br>'};
+			artwork[11]={pic:'artwork/paintings/2014sp12.jpg',details:'<b class="detailsTitle">Apathy No. 12 (Deterioration)</b><br>'};
+
+
+			for(k=0;k<artwork.length;k++){										
+	 			document.body.innerHTML+='<center><img height="'+window.innerHeight*.9+'px" src=' + '"'+artwork[k].pic+'"'+'>'; 
+	 			document.body.innerHTML+='<div class="details" >'+artwork[k].details+'</div></center>';
+			}
+
+
+			
+		</script>
+  
+
+	
+
+</body>
+
+
+</html>

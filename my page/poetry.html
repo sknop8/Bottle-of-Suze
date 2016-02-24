@@ -1,0 +1,140 @@
+<html>
+
+<head>
+	<title>Poetry</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<link href="favstylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+	#poetry{
+			color:white;
+			font-size: 25pt;
+		}
+	button{
+		
+		letter-spacing: 2px;
+		border:none;
+		background:inherit;
+		text-align: left;
+		color:gray;
+	}
+	button:hover{
+		background-color:#353535;
+		transition: .1s;
+	}
+	.p{
+		
+		letter-spacing: 1px;
+		
+		color:#CAC8C8;
+		line-height: 20px;
+	}
+	button, .p, #back{
+		font-family: 'arial narrow';
+		font-size:12pt;
+
+		margin-left: 30%;
+	}
+	#description{
+		color:#A0A0A0  ;
+		margin-left: 20%;
+		margin-right: 20%; 
+		line-height: 20px;
+		letter-spacing: 1px;
+		font-family: 'arial narrow';
+		font-size:14pt;
+	}
+
+</style>
+<body>
+
+
+	<script type="text/javascript" src="favheader.js"></script>
+
+	<br><br>
+
+	<center>
+	<p id="description">I am an avid reader of poetry, so here is a compiled list of my favorite poems:</p>
+	<center>
+
+	<script>
+		var po = new Array;
+
+		po[0]={auth:'Emily Dickinson', nam:'Tell all the Truth but tell it slant',txt:"Tell all the Truth but tell it slant --<br>Success in Circuit lies<br>Too bright for our infirm Delight<br>The Truth's superb surprise<br><br>As Lightning to the Children eased<br>With explanation kind<br>The Truth must dazzle gradually<br>Or every man be blind --"};
+		po[1]={auth:'Robert Frost',nam:'Nothing Gold Can Stay', txt:'Natures first green is gold<br>Her hardest hue to hold<br>Her early leafs a flower<br>But only so an hour<br><br>Then leaf subsides to leaf<br>So eden sank to grief<br>So dawn goes down to day<br>Nothing gold can stay '};
+		po[2]={auth:'Pai Ta-shun',nam:"The Artist's Precept", txt:"I would not paint a face<br>Or rocks or streams of trees -<br>Mere semblances of things - <br>But something more than these.<br>I would not play a tune<br>Upon the sheng or lute,<br>Which did not also sing<br>Meanings that else were mute.<br>That art is best which gives<br>To the soul's range no bound;<br>Something beside the form,<br>Something beyond the sound."};
+		po[3]={auth:'Robert Frost',nam:'Lodged', txt:"The rain to the wind said,<br>'You push I'll pelt.'<br>They so smote the garden bed<br>That the flowers actually knelt,<br>And lay lodged--though not dead.<br>I know how the flowers felt."};
+		po[4]={auth:'Ezra Pound',nam:'In a Station of the Metro',txt:"The apparition of these faces in the crowd;<br>Petals on a wet, black, bough."};
+		po[5]={auth:'Ezra Pound',nam:'Fan-Piece, for Her Imperial Lord',txt:"O fan of white silk,<br>&nbsp;&nbsp;&nbsp;&nbsp;Clear as frost on the grass-blade,<br>You also are laid aside."};
+		po[6]={auth:'Robert Frost',nam:'Dust of Snow',txt:"The way a crow<br>Shook down on me<br>The dust of snow<br>From a hemlock tree<br><br>Has given my heart<br>A change of mood<br>And saved some part<br>Of a day I had rued."};
+		po[7]={auth:'Robert Frost',nam:'The Rose Family',txt:"The rose is a rose,<br>And was always a rose.<br>But the theory now goes<br>That the apple's a rose,<br>And the pear is, and so's<br>The plum, I suppose.<br>The dear only knows<br>What will next prove a rose.<br>You, of course, are a rose --<br>But were always a rose."};
+		po[8]={auth:'Walt Whitman',nam:'Beginners',txt:"How they are provided for upon the earth, (appearing at intervals,)<br>How dear and dreadful they are to the earth,<br>How they inure to themselves as much as to any -- what a paradox appears their age,<br>How people respond to them, yet know them not,<br>How there is something relentless in their fate all times,<br>How all times mischoose the objects of their adulation and reward,<br>And how the same inexorable price must be paid for the same great purchase."};
+		po[9]={auth:'Ezra Pound',nam:'In Exitum Cuiusdam',txt:"On a certain one's departure<br><br>"+'"'+"Time's bitter flood"+'"'+"! Oh, that's all very well,<br>But where's the old friend hasn't fallen off,<br>Or slacked his hand grip when you first gripped fame?<br>I know your circle and can fairly tell<br>What you have kept and what you have left behind:<br>I know my circle and know very well<br>How many faces I'd have out of mind."};
+		po[10]={auth:'Emily Dickinson',nam:"'Twas such a little -- little boat",txt:"'Twas such a little -- little boat<br>That toddled down the bay!<br>'Twas such a gallant -- gallant sea<br>That beckoned it away!<br><br>'Twas such a greedy, greedy wave<br>That licked it from the Coast -- <br>Nor ever guessed the stately sails<br>My little craft was lost!"};
+		po[11]={auth:'Emily Dickinson',nam:'A Thought went up my mind to-day --',txt:"A Thouht went up my mind to-day --<br>That I have had before --<br>But did not finish -- some way back -- <br>I could not fix the Year --<br><br>Nor where it went -- nor why it came<br>The second time to me -- <br>Nor definitely, what it was --<br>Have I the Art to say -- <br><br>But somewhere -- in my Soul -- I know --<br>I've met the Thing before --<br>It just reminded me -- 'twas all --<br>And came my way no more--"};
+		po[12]={auth:'Emily Dickinson',nam:'A darting fear--a pomp--a tear--',txt:"A darting fear--a pomp--a tear--<br>A waking on a morn<br>To find that what one waked for,<br>Inhales the different dawn."};
+		po[13]={auth:'Robert Frost',nam:'Fireflies in the Garden',txt:"Here come stars to fill the upper skies,<br>And here on earth come emulating flies,<br>That though they never equal stars in size,<br>(And they were never really stars at heart)<br>Achieve at times a very star-like start.<br>Only, of course, they can't sustain the part."};
+		po[14]={auth:'Emily Dickinson',nam:'From Blank to Blank--',txt:"From Blank to Blank -<br>A Threadless Way<br>I pushed Mechanic feet-- <br>To stop--or perish--or advance--<br>Alike indifferent--<br><br>If end I gained<br>It ends beyond<br>Indefinite disclosed--<br>I shut my eyes--and groped as well<br>'Twas lighter--to be Blind--"};
+		po[15]={auth:'Ezra Pound',nam:'Salutation',txt:"O generation of the thoroughly smug<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and thoroughly uncomfortable,<br>I have seen fishermen picnicking in the sun,<br>I have seen them with untidy families,<br>I have seen their smiles full of teeth<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and heard ungainly laughter.<br>And I am happier than you are,<br>And they were happier than I am;<br>And the fish swim in the lake<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and do not even own clothing."};
+		po[16]={auth:'',nam:'',txt:""};
+		po[17]={auth:'',nam:'',txt:""};
+		po[18]={auth:'',nam:'',txt:""};
+		po[19]={auth:'',nam:'',txt:""};
+
+
+			var w=document.createElement('div');
+			w.setAttribute('id','whole');
+
+		for(i=0;i<po.length;i++){
+			
+
+			var a=document.createElement('button');
+			a.setAttribute('onclick','cleek('+i+')');
+			a.innerHTML=po[i].nam+'<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+po[i].auth;
+			w.appendChild(a);
+
+			var sp=document.createElement('div');
+			sp.innerHTML='<br><br>';
+			w.appendChild(sp);
+
+			
+			document.body.appendChild(w);
+
+		}
+
+		function cleek(num){ 
+
+
+			var n =num;
+			var g=document.getElementById('whole');
+			document.body.removeChild(g);
+
+			var b=document.createElement('div');
+			b.innerHTML=po[n].nam+'<br><br>'+po[n].txt+'<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+po[n].auth+'<br><br>';
+			b.setAttribute('class','p');
+
+			document.body.appendChild(b);
+
+			var back=document.createElement('a');
+			back.innerHTML='Back'
+			back.setAttribute('text-decoration','none');
+			back.setAttribute('href','poetry.html');
+			back.setAttribute('id','back');
+			back.style.color='gray';
+			document.body.appendChild(back);
+
+
+
+		}
+
+
+
+	</script>
+
+
+</body>
+
+</html>

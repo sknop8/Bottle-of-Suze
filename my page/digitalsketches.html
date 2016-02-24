@@ -1,0 +1,87 @@
+<html>
+<head>
+	<title>Digital Art | Suzanne Knop</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="artstylesheet.css" rel="stylesheet" type="text/css">
+	
+
+</head>
+<style>
+	.link{
+		color:white;
+		letter-spacing: 2px;
+		
+	}
+	.link:hover{
+		background-color: #383838 ;
+	}
+	#linkToVid{
+		line-height: 15px;
+		font-size: ;
+	}15pt
+
+	.details{
+		color:gray;
+	}
+	.detailsTitle{
+		color:white;
+		font-family: "skarpa";
+	}
+	
+
+</style>
+<body>
+	<script type="text/javascript" src="artheader.js"></script>
+
+
+	<center>
+		<p id="title2">Digital Art</p>
+		<p id="description"> Digital drawings created using the iPad app, Procreate <br></p>
+		<p> <a class="link" id="linkToVid" href="digitalVids.html">click here to see some videos of the drawing process! </a> </p><br>
+
+	</center>
+
+	<p><a id="back" href="art.html">Back</a></p>
+
+
+		<!--<a href="test.html">test</a>-->
+
+		<script>
+			var artwork = new Array;
+
+			artwork[0]={pic:'artwork/digital/livingroom.jpg',details:'<b class="detailsTitle">Living Room On A Snowy Day</b><br> November 2014'};
+			artwork[1]={pic:'artwork/digital/brovidgameSketch.jpg',details:'sketch of my brother playing a video game<br>November 2014'};
+			artwork[2]={pic:'artwork/digital/mother.jpg',details:'<b class="detailsTitle">Portrait of My Mother</b><br>2014'};
+			artwork[3]={pic:'artwork/digital/woolf.jpg',details:'<b class="detailsTitle">Virginia Woolf</b><br>2014'};
+			artwork[4]={pic:'artwork/digital/self.jpg',details:'<b class="detailsTitle">Self Portrait</b><br>2014'};
+			artwork[5]={pic:'artwork/digital/prufrock.jpg',details:'<b class="detailsTitle">Prufrock</b><br>This piece was made with the use of collage, and many refereneces, and was influenced by one of my favorite poems, <a class="link" target="_blank href="http://www.bartleby.com/198/1.html">The Love Poem of J. Alfred Prufrock by T.S. Eliot.</a><br>2014'};
+			artwork[6]={pic:'artwork/digital/meryl.jpg',details:'<b class="detailsTitle">Portrait of Meryl Streep</b><br>2014'};
+			artwork[7]={pic:'artwork/digital/annieclark.jpg',details:'Unfinished portrait of Annie Clark (St. Vincent) made with Photoshop'};
+			artwork[8]={pic:'artwork/digital/maSketch.jpg',details:'sketch of my mom'};
+			artwork[9]={pic:'artwork/digital/dgSketch.jpg',details:'sketch of my friends'};
+			artwork[10]={pic:'artwork/digital/broSketch.jpg',details:'sketch of my brother'};
+			artwork[11]={pic:'artwork/digital/parentsSketch.jpg',details:'sketch of my parents'};
+			
+			
+			//artwork[11]={pic:'artwork/digital/',details:''};
+
+
+			for(k=0;k<artwork.length;k++){										
+	 			document.body.innerHTML+='<center><img height="'+window.innerHeight*.9+'px" src=' + '"'+artwork[k].pic+'"'+'>'; 
+	 			document.body.innerHTML+='<div class="details" >'+artwork[k].details+'</div></center>';
+			}
+
+
+		</script>
+
+			
+	
+
+</body>
+
+
+</html>

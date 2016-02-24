@@ -1,0 +1,123 @@
+<html>
+	<head>
+		<title>Music Artists I Like</title>
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+		<link href="favstylesheet.css" rel="stylesheet" type="text/css">
+	</head>
+	<style>
+		#music{
+			color:white;
+			font-size: 25pt;
+		}
+	
+		td,#description{
+			color:white;
+			text-align: center;
+			font-family: "arial narrow";
+			letter-spacing: 2px;
+			
+			/*position:static;*/
+		}
+		table{
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+		#back{
+			color:gray;
+			padding:1px;
+			letter-spacing: 0px;
+			margin-left: 10%;
+		}
+		#back:hover{
+			 background-color: #383838 ;
+		}
+		
+
+
+	</style>
+	<body>
+		<script type="text/javascript" src="favheader.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+
+
+
+		<a id="back" href="music.html">Back</a>
+		<center>
+
+			<br><br><br><br>
+			<div id="description">Here are some music artists I really like:</div>
+
+		<script>
+
+			var artist=new Array;
+
+			
+			artist[0]={nam:'Metric',pic:'musicPics/metric.jpg',alb:'musicPics/metricAlb.jpg',spot:'http://open.spotify.com/artist/1rCIEwPp5OnXW0ornlSsRl'};
+			artist[1]={nam:'St. Vincent',pic:'musicPics/stvincent.jpg',alb:'musicPics/stvincentAlb.jpg',spot:'http://open.spotify.com/artist/7bcbShaqKdcyjnmv4Ix8j6'};
+			artist[2]={nam:'Fiona Apple',pic:'musicPics/fionaapple.jpg',alb:'musicPics/fionaapleAlb.jpg',spot:'http://open.spotify.com/artist/3g2kUQ6tHLLbmkV7T4GPtL'};
+			artist[3]={nam:'BOY',pic:'musicPics/BOY.jpg',alb:'musicPics/BOYAlb.jpg',spot:'http://open.spotify.com/artist/7I7ObCLzhAnOchc4fCQiRX'};
+			artist[4]={nam:'Feist',pic:'musicPics/lesliefeist.jpg',alb:'musicPics/feistAlb.jpg',spot:'http://open.spotify.com/artist/6CWTBjOJK75cTE8Xv8u1kj'};
+			artist[5]={nam:'Thao & The Get Down Stay Down',pic:'musicPics/thao.jpg',alb:'musicPics/thaoAlb.jpg',spot:'http://open.spotify.com/artist/2dn0CGCWvtrwZ66bOeLNb2'};
+			artist[6]={nam:'Beach House',pic:'musicPics/beachhouse.jpg',alb:'musicPics/beachhouseAlb.jpg',spot:'http://open.spotify.com/artist/56ZTgzPBDge0OvCGgMO3OY'};
+			artist[7]={nam:'Arcade Fire',pic:'musicPics/arcadefire.jpg',alb:'musicPics/arcadefireAlb.jpg',spot:'http://open.spotify.com/artist/3kjuyTCjPG1WMFCiyc5IuB'};			
+			artist[8]={nam:'Bombay Bicycle Club',pic:'musicPics/bbc.jpg',alb:'musicPics/bbcAlb.jpg', spot:'http://open.spotify.com/artist/3pTE9iaJTkWns3mxpNQlJV'};
+			artist[9]={nam:'Vampire Weekend',pic:'musicPics/vampireweekend.jpg',alb:'musicPics/vampireweekendAlb.jpg',spot:'http://open.spotify.com/artist/5BvJzeQpmsdsFp4HGUYUEx'};
+			artist[10]={nam:'Beirut',pic:'musicPics/beirut.jpg',alb:'musicPics/beirutAlb.jpg',spot:'http://open.spotify.com/artist/6pmxr66tMAePxzOLfjGNcX'};
+			artist[11]={nam:'M.I.A.',pic:'musicPics/mia.jpg',alb:'musicPics/miaAlb.jpg',spot:'http://open.spotify.com/artist/0QJIPDAEDILuo8AIq3pMuU'};
+			artist[12]={nam:'Foals',pic:'musicPics/foals.jpg',alb:'musicPics/foalsAlb.jpg',spot:'http://open.spotify.com/artist/6FQqZYVfTNQ1pCqfkwVFEa'};
+
+
+
+			var table = document.createElement('table');
+		
+			table.setAttribute('cellpadding','20px');
+			
+			var tr=document.createElement('tr');
+					
+			for(k=0;k<artist.length;k++){
+				if(k%4==0){
+					var tr=document.createElement('tr');
+				}
+													
+	 			var td=document.createElement('td');
+	 							
+	 			td.innerHTML='<a href="' + artist[k].spot + '" target="_blank"><img width="200px"  class="artist" onmouseover="this.src='+"'"+artist[k].alb+"';"+'" onmouseout="this.src='+"'"+artist[k].pic+"';"+'"src=' + '"'+artist[k].pic+'"'+'></a><br><br>'+artist[k].nam;
+	 			
+	 			td.setAttribute("width","200px");
+	 			td.setAttribute("id","cell"+k)
+
+				td.setAttribute("position","absolute");
+				td.setAttribute("class","cells");
+
+				var x = "url('"+artist[k].alb+"')";
+				var id = "cell"+k;
+
+	 			tr.appendChild(td);
+
+				table.appendChild(tr);
+	
+			}
+
+				
+				$('body').append(table);
+
+			
+
+		</script>
+	
+
+		
+
+	</center>
+
+
+
+
+
+
+	</body>
+</html>

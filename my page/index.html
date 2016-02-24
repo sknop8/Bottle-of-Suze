@@ -1,0 +1,91 @@
+<html>
+
+<head>
+	<meta name = "description" content="Suzanne Knop's Online Art Portfolio">
+	<meta name = "author" content="Suzanne Knop">
+	<title>Home | Suzanne Knop</title>
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<style>
+/*
+@font-face{
+	font-family: "century gothic";
+	src: url('4365.ttf');
+	}
+	*/
+	body{
+		background-color:#202020;
+		padding:20px;
+		/*font-family:"century gothic";*/
+		letter-spacing: 2px;
+		line-height: 10px;
+
+	}
+	a{
+		text-decoration: none;
+	}
+	#art{
+		-webkit-animation: fadein 2s;
+      	-moz-animation: fadein 2s;
+      	animation: fadein 2s;
+      	vertical-align: 4px;
+	}
+		@keyframes fadein {
+	    	from { opacity: 0; }
+	    	to   { opacity: 1; }
+		}
+		@-moz-keyframes fadein {
+	    	from { opacity: 0; }
+	    	to   { opacity: 1; }
+		}
+		@-webkit-keyframes fadein {
+	    	from { opacity: 0; }
+	    	to   { opacity: 1; }
+		}
+	#art:hover,#bio:hover{
+		color:#DCDCDC;
+		transition: .2s;
+	}
+	#name{
+		font-size:40pt;
+		color:#DCDCDC;
+		letter-spacing: 5px;
+	}
+	#bio,#art,#breaker,.brace{
+		padding-top: 40pt;
+		display: inline-block;
+		font-size:25pt;
+		color:#7D7D7D;
+	}
+	#top{
+		text-align: center;
+		margin-top: 15%;
+	}
+
+</style>
+<body>
+
+<div id='top'>
+
+<a href="index.html"><div id="name">Suzanne Knop</div></a>
+
+<!--<a href="bio.html"><div id="bio">Bio</div></a> -->
+<!--<div style="color:#484848;" id="breaker">&nbsp;|&nbsp;</div> -->
+<a href="art.html"><div class="brace">{</div></a>
+<a href="art.html"><div id="art"> &nbsp; enter &nbsp;</div></a>
+<a href="art.html"><div class="brace">}</div></a>
+
+<!--
+<h2>|</h2>
+//<a href="blog.html"><h2>Blog<h2></a>
+-->
+
+</div>
+
+
+</body>
+
+</html>

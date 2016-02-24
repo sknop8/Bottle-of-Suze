@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Charcoal | Suzanne Knop</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="artstylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+
+</style>
+<body>
+	<script type="text/javascript" src="artheader.js"></script>
+
+	<center>
+		<p id="title2">Charcoal</p>
+		<p id="description"> ...charcoal &amp; pastel drawings.. </p>
+	</center>
+
+	<p><a id="back" href="art.html">Back</a></p>
+
+
+		<script>
+			var artwork = new Array;
+
+			artwork[0]={pic:'artwork/charcoal/2014impossible.jpg',details:'Charcoal study of transparent, white, and reflective objects (2014)'};
+			artwork[1]={pic:'artwork/charcoal/2013impossible.jpg',details:'Charcoal study of transparent, white, and reflective objects (2013)'};
+			artwork[2]={pic:'artwork/charcoal/2013movement.jpg',details:'Pastel movement study (2013)'};
+			artwork[3]={pic:'artwork/charcoal/2013unsettle.jpg',details:'Charcoal - Task: to create an unsettling, anxiety evoking scene. I used dramatic lighting and a panicky subject matter such as time to help me achieve the task. (2013)'};
+			artwork[4]={pic:'artwork/charcoal/2013ppl.jpg',details:'Charcoal and pastels (2013)'};
+			artwork[5]={pic:'artwork/charcoal/2013shells.jpg',details:'Charcoal, pastels, and colored paper (2013)'};
+			artwork[6]={pic:'artwork/charcoal/2012objects.jpg',details:'Pastels (2012)'};
+			artwork[7]={pic:'artwork/charcoal/2012toys.jpg',details:'Charcoal (2012)'};
+			artwork[8]={pic:'artwork/charcoal/2012still.jpg',details:'Charcoal (2012)'};
+			artwork[9]={pic:'artwork/charcoal/2012iron.jpg',details:'Charcoal (2012)'};
+			artwork[10]={pic:'artwork/charcoal/2012bottle.jpg',details:'Charcoal (2012)'};
+			artwork[11]={pic:'artwork/charcoal/2012boots.jpg',details:'Charcoal (2012)'};
+			artwork[12]={pic:'artwork/charcoal/2012bike.jpg',details:'Charcoal (2012)'};
+			artwork[13]={pic:'artwork/charcoal/2011still.jpg',details:'Charcoal (2011)'};
+			//artwork[14]={pic:'artwork/charcoal/',details:''};
+
+		
+
+
+			for(k=0;k<artwork.length;k++){										
+	 			document.body.innerHTML+='<center><img height="'+window.innerHeight*.9+'px" src=' + '"'+artwork[k].pic+'"'+'>'; 
+	 			document.body.innerHTML+='<div class="details" >'+artwork[k].details+'</div></center>';
+			}
+
+
+			
+		</script>
+
+</body>
+
+
+</html>

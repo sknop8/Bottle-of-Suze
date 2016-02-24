@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Illustrations for School | Suzanne Knop</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="artstylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+	
+</style>
+<body>
+	<script type="text/javascript" src="artheader.js"></script>
+
+	<center>
+		<p id="title2">Illustrations for School</p>
+		<p id="description"> ...Drawings for the school newspaper, my entries into cover competitions, concert programs etc .. </p>
+	</center>
+
+	<p><a id="back" href="other.html">Back</a></p>
+
+
+		<script>
+			var artwork = new Array;
+
+			artwork[0]={pic:'artwork/other/school/2014feb_tech.jpg',details:'An illustration for the February 2014 issue of <i>The Arlingtonian</i>'};
+			artwork[1]={pic:'artwork/other/school/2014feb_AP.jpg',details:'An illustration for the February 2014 issue of <i>The Arlingtonian</i>'};
+			artwork[2]={pic:'artwork/other/school/2014_intfest.jpg',details:'My entry for the 2014 International Festival cover competition'};
+			artwork[3]={pic:'artwork/other/school/2014_frome.jpg',details:'An album cover (acrylic) for an 11th grade English project based on the novel <i>Ethan Frome</i> by Edith Wharton'};
+			artwork[4]={pic:'artwork/other/school/2013sep_schoolStart.jpg',details:'An illustration for the October 2013 issue of <i>The Arlingtonian</i>'};
+			artwork[5]={pic:'artwork/other/school/2013_intfest.jpg',details:'My entry for the 2013 International Festival cover competition'};
+			artwork[6]={pic:'artwork/other/school/2013_pops.jpg',details:'My entry for the 2013 Pops concert program at my school.'};
+			artwork[7]={pic:'artwork/other/school/2012_boneanza.jpg',details:'My entry for the 2012 Bone-anza (Halloween) concert program at my school. [winner]'};
+			artwork[8]={pic:'artwork/other/school/2012_pops2.jpg',details:'My first entry for the 2013 Pops concert program at my school. [winner]'};
+			artwork[9]={pic:'artwork/other/school/2012_pops.jpg',details:'My second entry for the 2013 Pops concert program at my school.'};
+			//artwork[10]={pic:'artwork/other/school/',details:''};
+
+
+
+
+
+			for(k=0;k<artwork.length;k++){										
+	 			document.body.innerHTML+='<center><img height="'+window.innerHeight*.7+'px" src=' + '"'+artwork[k].pic+'"'+'>'; 
+	 			document.body.innerHTML+='<div class="details" >'+artwork[k].details+'</div></center>';
+			}
+
+
+			
+		</script>
+  
+
+	
+
+</body>
+
+
+</html>

@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>Favorites | Suzanne Knop</title>
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+		<!--<link href="stylesheet.css" rel="stylesheet" type="text/css">  -->
+		<link href="favstylesheet.css" rel="stylesheet" type="text/css">
+
+
+	</head>
+	<style>
+		#description{
+			color:white;
+			padding-top: 20px;
+			margin-left: 25%;
+			margin-right: 25%;
+			line-height: 20px;
+			font-family: "arial narrow";
+			font-size: 13pt;
+			color:gray;
+			letter-spacing: 1pt;
+
+		}
+		#picPlace{
+			border-radius: 5px;
+			 transition: all 0.5s ease;
+		}
+		
+	</style>
+	<body>
+		
+		<script type="text/javascript" src="favheader.js"></script>
+
+		<center>
+		<p id="description">Hello! My name is Suzanne and this is where I keep the things I like. I find that one can tell a lot about a person based on their tastes and favorite things. </p>
+		</center>
+		<div id="picPlace"></div>
+
+		<script>
+			var pics = new Array;
+
+			pics[0]="otherPics/catcher.jpg";
+			pics[1]="otherPics/joyluck.jpg";
+			pics[2]="musicPics/stvincent.jpg";
+			pics[3]="musicPics/beachhouseAlb.jpg";
+			pics[4]="otherPics/magritte_Infinite.jpg";
+			pics[5]="otherPics/hopper_nymovie.jpg";
+			pics[6]="otherPics/dickinson.jpg";
+			pics[7]="musicPics/bbcAlb.jpg";
+			pics[8]="otherPics/bellows_giantsky.jpg";
+			pics[9]="otherPics/grapes.jpg";
+			pics[10]="otherPics/arcadefireAlb.jpg";
+
+
+			document.getElementById("picPlace").innerHTML += "<center><img id='picPlace' height='"+window.innerHeight*.5+"' src ='"+pics[0]+"'></center>";
+
+			var myVar=setInterval(function(){getPic()},1800);
+
+			$("#picPlace").fadeIn();
+
+			function getPic() {
+			    var d = Math.round(Math.random()*10);
+			    document.getElementById("picPlace").innerHTML="<center><img id='picPlace' height='"+window.innerHeight*.5+"' src ='"+pics[d]+"'></center>";
+			}
+
+			
+
+		</script>
+
+
+	</body>
+
+
+
+</html>

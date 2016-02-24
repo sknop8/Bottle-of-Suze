@@ -1,0 +1,81 @@
+<html>
+
+<head>
+	<title>Quotes</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<link href="favstylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+	#quotes{
+			color:white;
+			font-size: 25pt;
+		}
+	.q{
+		margin-left:30%;
+		margin-right: 30%;
+		color:#CAC8C8;
+		line-height: 20px;
+		letter-spacing: 1px;
+		font-family: 'arial narrow';
+	}
+
+
+</style>
+<body>
+
+
+	<script type="text/javascript" src="favheader.js"></script>
+
+	<br><br>
+
+	<script>
+		var quo = new Array;
+
+		quo[0]={auth: 'Friedrich Nietzsche',txt:'A thought, even a possibility can shatter and transform us '};
+		quo[1]={auth:'Edgar Allan Poe',txt:'Those who dream by day are cognizant of many things that escape those who dream only at night'};
+		quo[2]={auth:'CS Lewis ',txt:'Friendship is unnecessary, like philosophy, like art ... It has no survival value; rather it is one of those things which give value to survival.'};
+		quo[3]={auth:'Amy Tan, The Joy Luck Club',txt:"So this is what I will do. I will gather together my past and look. I will see a thing that has already happened. The pain that cut my spirit loose. I will hold that pain in my hand until it becomes hard and shiny, more clear. And then my fierceness can come back, my golden side, my black side. I will use this sharp pain to penetrate my daughter's tough skin and cut her tiger spirit loose. She will fight me, because this is the nature of two tigers. But I will win and give her my spirit, because this is the way a mother loves her daughter."};
+		quo[4]={auth:"Aldous Huxley",txt:"After silence, that which comes nearest to expressing the inexpressible is music. "};
+		quo[5]={auth:"W.I. Thomas",txt:"It is not important whether or not the interpretation is correct--if men define situations as real, they are real in their consequences."};
+		//quo[7]={auth:"J.K. Rowling",txt:"After all, to the well-organized mind, death is but the next great adventure. "};
+		quo[6]={auth:"Robert Brault",txt:"The average teacher explains complexity; the gifted teacher reveals simplicity."};
+		quo[7]={auth:"Douglas Adams (Life, the Universe and Everything)",txt:"'The Guide says there is an art to flying,' said Ford, 'or rather a knack. The knack lies in learning how to throw yourself at the ground and miss.'"};
+		quo[8]={auth:"Bill Watterson",txt:"You will do well to cultivate the resources in yourself that bring you happiness outside of success or failure."};
+		quo[9]={auth:"Virginia Woolf",txt:"People are--nothing more."};
+		quo[10]={auth:"Virginia Woolf",txt:"When you consider things like stars, our affairs don't seem to matter very much, do they?"};
+		quo[11]={auth:"Virginia Woolf",txt:"I thought how unpleasant it is to be locked out; and I thought how it is worse, perhaps, to be locked in."};
+		quo[12]={auth:"Vincent van Gogh",txt:"I often think that the night is more alive and more richly colored than the day."};
+		quo[13]={auth:"e.e. cummings",txt:"Unbeing dead isn't being alive"};
+		quo[14]={auth:"Richard Feynman",txt:"For far more marvelous is the truth than any artists of the past imagined it. Why do the poets of the present not speak of it? What men are poets who can speak of Jupiter if he were a man, but if he is an immense spinning sphere of methane and ammonia must be silent?"};
+		quo[15]={auth:"J. Robert Oppenheimer",txt:"It is a profound and necessary truth that the deep things in science are not found because they are useful; they are found because it was possible to find them."};
+		quo[16]={auth:"Bertrand Russell",txt:"Mathematics, rightly viewed, possess not only truth, but supreme beauty--a beauty cold and austere, like that of sculpture, without appeal to any part of our weaker nature, without the gorgeous trappings of painting or music, yet sublimely pure, and capable of a stern perfection such as only the greatest art can show. The true spirit of delight, the exaltation, the snese of being more than Man, which is the touchstone, is to be found in mathematics as surely as poetry."};
+		quo[17]={auth:"Mrs. Alving from <i>Ghosts</i> by Henrik Ibsen",txt:"I am half inclined to think we are all ghosts, Mr. Manders."};
+		//quo[18]={auth:"",txt:""};
+		//quo[19]={auth:"",txt:""};
+		//quo[20]={auth:"",txt:""};
+
+		
+
+
+		for(i=0;i<quo.length;i++){
+			d=document.createElement('div');
+			d.setAttribute('class','q');
+			d.innerHTML='"'+quo[i].txt+'"<br>&nbsp;&nbsp;--'+quo[i].auth+'<br><br>';
+			document.body.appendChild(d);
+
+		}
+
+
+
+
+
+
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Oil Paintings | Suzanne Knop</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="artstylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+	.details{
+		color:gray;
+	}
+	.detailsTitle{
+		color:white;
+		font-family: "skarpa";
+	}
+</style>
+<body>
+	<script type="text/javascript" src="artheader.js"></script>
+
+	<center>
+		<p id="title2">Oil Paintings</p>
+		<p id="description">  </p>
+	</center>
+
+	<p><a id="back" href="paintings.html">Back</a></p>
+
+
+		<script>
+			var artwork = new Array;
+			artwork[0]={pic:'artwork/paintings/2014shifty.jpg',details:'December, 2014'};
+			artwork[1]={pic:'artwork/paintings/2014oil2.jpg',details:'Self Portrait - November, 2014'};
+			artwork[2]={pic:'artwork/paintings/2014oil1.jpg',details:'Self Portrait - August, 2014'};
+			//artwork[0]={pic:'artwork/paintings/',details:''};
+
+
+
+
+			for(k=0;k<artwork.length;k++){										
+	 			document.body.innerHTML+='<center><img height="'+window.innerHeight*.9+'px" src=' + '"'+artwork[k].pic+'"'+'>'; 
+	 			document.body.innerHTML+='<div class="details" >'+artwork[k].details+'</div></center>';
+			}
+
+
+			
+		</script>
+  
+
+	
+
+</body>
+
+
+</html>

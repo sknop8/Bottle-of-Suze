@@ -1,0 +1,169 @@
+<html>
+<head>
+	<title>Figure Drawing | Suzanne Knop</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="artstylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+
+	#bigDiv{
+		width:70%;
+		margin-left: 15%;
+	}
+	.littleDiv{
+		float:left;
+		width:25%;
+		height: 150px;
+	}
+
+</style>
+<body>
+	<script type="text/javascript" src="artheader.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	
+	<center>
+		<p id="title2">Figure Drawing</p>
+		<p id="description"> Charcoal figure work ranging from 20 second to 30 minute pieces </p>
+	</center>
+
+	<p><a id="back" href="art.html">Back</a></p>
+
+		<script>
+		/*
+			var bigDiv = document.createElement("div");
+			document.body.appendChild(bigDiv);
+			bigDiv.setAttribute("id","bigDiv");
+
+			for(k=1;k<73;k++){
+				var littleDiv = document.createElement("div");
+				bigDiv.appendChild(littleDiv);
+				littleDiv.setAttribute("id","ID"+k); 
+				littleDiv.setAttribute("class","littleDiv"); 
+
+				//var margin = 10*k%5;
+
+				//littleDiv.setAttribute("style","margin-left:"+margin+"%");
+				
+
+	 			var newPic = '<img style="display:block; margin:auto;" height='+window.innerWidth*0.08 +'px src="artwork/figure_drawing/' + k +'.jpg">';
+	 			
+	 			//if(k%4 == 0){
+	 				//bigDiv.innerHTML+= '<br>';
+	 			//}
+
+				document.getElementById("ID"+k).innerHTML+=newPic;
+
+	 			 var display = '<p>hi</p>';
+
+	 			 littleDiv.setAttribute("onclick","displayFunction()");
+
+	 			 function displayFunction(){
+	 			 	$(bigDiv).empty();
+	 			 	var p = document.createElement("p");
+	 			 	var k = "hi <div style='background-color:none;'><img display='true' src='artwork/piSamp.jpg'></div>";
+	 			
+	 			 	 p.innerHTML = k;
+	 			 	//var p = document.createElement("img");
+	 			 	//p.setAttribute("src","artwork/oilSamp.jpg");
+	 			 	bigDiv.appendChild(p);
+	 			 	//bigDiv.innerHTML='<p>hi</p><img style="display:block; margin:auto;" height='+window.innerWidth*0.08 +'px src="artwork/figure_drawing/' + k +'.jpg">';
+	 			 }
+
+			}
+
+		*/
+
+		var ar = new Array;
+
+		ar[0] = {loc:'artwork/figure_drawing/1.jpg'}
+		ar[1] = {loc:'artwork/figure_drawing/2.jpg'}
+
+			var w=document.createElement('div');
+			w.setAttribute('id','whole');
+
+		for(i=0;i<ar.length;i++){
+
+			//var pic = document.createElement('img');
+			//pic.src = ar[i].loc;
+
+			
+			var a=document.createElement('img');
+			a.setAttribute('onclick','cleek('+i+');');//'+i+','+pic+');');
+			//a.innerHTML='<img height="100px" src="'+ar[i].loc + '">';
+		
+			a.src=ar[i].loc;
+			a.style.height="100px";
+			a.setAttribute('id','pic'+i);
+			w.appendChild(a);
+
+
+			var sp=document.createElement('div');
+			sp.innerHTML='<br><br>';
+			w.appendChild(sp);
+
+			
+			document.body.appendChild(w);
+
+
+		}
+
+		function cleek(i){//num, pic){
+		
+			document.body.removeChild(document.getElementById('whole'));
+			
+			//var w=document.createElement('div');
+			//w.setAttribute('id','wholeNew');
+
+			var a=document.createElement('div');
+			//a.setAttribute('onclick','cleek('+i+');');//'+i+','+pic+');');
+			a.style.backgroundColor=  "white";
+			a.style.opacity="0.4";
+			a.innerHTML="<p>hi</p><img height='200px' width='100px' src='http://www.w3schools.com/images/colorpicker.gif'/>";
+			//a.style.transition= "5s";
+
+			document.body.appendChild(a);
+
+			
+
+			var back=document.getElementById('back');
+			back.innerHTML='Back';
+			back.setAttribute('text-decoration','none');
+			back.setAttribute('href','test.html');
+			back.setAttribute('id','newBack');
+			back.style.color='gray';
+			document.body.appendChild(back);
+
+		}
+
+		var butt = document.createElement("button");
+		butt.innerHTML="hi";
+		butt.setAttribute("onclick","cleek2();");
+		document.appendChild(butt);
+
+		function cleek2(){
+			document.body.removeChild(document.getElementById('whole'));
+			
+			//var w=document.createElement('div');
+			//w.setAttribute('id','wholeNew');
+
+			var a=document.createElement('div');
+			//a.setAttribute('onclick','cleek('+i+');');//'+i+','+pic+');');
+			a.innerHTML="<img height='200px' width='100px' src='http://hsto.org/getpro/habr/post_images/e54/b9f/553/e54b9f55345a3bdfc78100971193cdc0.gif'/>";
+			//a.style.transition= "5s";
+
+			document.body.appendChild(a);
+
+			
+		}
+
+
+			
+		</script>
+
+</body>
+
+
+</html>

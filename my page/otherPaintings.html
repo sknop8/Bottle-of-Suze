@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>Other Paintings | Suzanne Knop</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="artstylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+	.details{
+		color:gray;
+	}
+	.detailsTitle{
+		color:white;
+		font-family: "skarpa";
+	}
+</style>
+<body>
+	<script type="text/javascript" src="artheader.js"></script>
+
+	<center>
+		<p id="title2">Other Paintings</p>
+		<p id="description">  </p>
+	</center>
+
+	<p><a id="back" href="paintings.html">Back</a></p>
+
+
+		<script>
+			var artwork = new Array;
+			artwork[0]={pic:'artwork/paintings/2014figure3.jpg',details:'<b class="detailsTitle">Figure Painting Study</b><br>Approx. 7 hours<br>December, 2014'};
+			artwork[1]={pic:'artwork/paintings/2014figurecolor.jpg',details:'<b class="detailsTitle">Figure Painting Study</b><br>Approx. 5 hours<br>November, 2014'};
+			artwork[2]={pic:'artwork/paintings/2014novself.jpg',details:'<b class="detailsTitle">Self Portrait</b><br>Approx. 3 hours<br>November, 2014'};
+			artwork[3]={pic:'artwork/paintings/2014distraction2.jpg',details:'<b class="detailsTitle">Distraction 2</b><br> October, 2014'};
+			artwork[4]={pic:'artwork/paintings/2014distraction1.jpg',details:'<b class="detailsTitle">Distraction 1</b><br> October, 2014'};
+			artwork[5]={pic:'artwork/paintings/2014fam.jpg',details:'<b class="detailsTitle">Family</b><br> August, 2014'};
+			artwork[6]={pic:'artwork/paintings/2014dream.jpg',details:'<b class="detailsTitle">Slaves to the Classics</b><br>The intersection of dreams and memories (2014)'};/*<br> The prompt being related to the intersection of dreams and memories, I attempted to interlace memories of playing piano in my childhood with depictions of the unsettling hold that classical art and literature has on us as a society.'};*/
+			artwork[7]={pic:'artwork/paintings/2014apocolypse.jpg',details:'<b class="detailsTitle">Apocalyptic Self</b><br>"If you were an archetypal character from an apocalyptic movie, who would you be?" (2014)'};
+			artwork[8]={pic:'artwork/paintings/2014lights.jpg',details:'(2014)'};
+			artwork[9]={pic:'artwork/paintings/2013_326am.jpg',details:'(2013)'};
+			artwork[10]={pic:'artwork/paintings/2013connected.jpg',details:'<b class="detailsTitle">Connected</b><br>Being dragged beneath (2013)'};
+			artwork[11]={pic:'artwork/paintings/2013cyberpunk.jpg',details:'<b class="detailsTitle">Cyberpunk Self Portrait</b><br>"Cyberpunk is a subgenre of science fiction in a near-future setting, noted for its focus on '+"'high tech and low life.'"+'" (2013)'};
+			artwork[12]={pic:'artwork/paintings/2013alice.jpg',details:'<b class="detailsTitle">Alice</b><br>(2013)'};
+			artwork[13]={pic:'artwork/paintings/2012unravel.jpg',details:'<b class="detailsTitle">Power of a Pawn</b><br>Unraveling at the seams - simultaneous contrast study <br>(Note: simultaneous contrast - when two colors, side by side, interact with one another and change our perception accordingly) <br>(2012)'};
+			artwork[14]={pic:'artwork/paintings/2012steampunk.jpg',details:'<b class="detailsTitle">Steampunk Self Portrait</b><br>"Steampunk is a sub-genre of science fiction that typically features steam-powered machinery,especially in a setting inspired by industrialized Western civilization during the 19th century" (2012)'};
+			artwork[15]={pic:'artwork/paintings/2011nightmare.jpg',details:'<b class="detailsTitle">Nightmare</b><br>(2011)'};
+			artwork[16]={pic:'artwork/paintings/2011cupcakes.jpg',details:'(2011)'};
+			
+			//artwork[0]={pic:'artwork/paintings/',details:''};
+
+
+
+
+			for(k=0;k<artwork.length;k++){										
+	 			document.body.innerHTML+='<center><img height="'+window.innerHeight*.9+'px" src=' + '"'+artwork[k].pic+'"'+'>'; 
+	 			document.body.innerHTML+='<div class="details" >'+artwork[k].details+'</div></center>';
+			}
+
+
+			
+		</script>
+  
+
+	
+
+</body>
+
+
+</html>
